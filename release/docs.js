@@ -26,7 +26,7 @@
                         version : versionNew
                     });
                     
-                    replaceVersion('README.md', history, historyNew, function(error) {
+                    replaceVersion('README.md', history, historyNew, function(e) {
                         if (!error(e, callback))
                             pack(versionNew, callback);
                     });
