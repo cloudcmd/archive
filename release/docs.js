@@ -12,18 +12,20 @@
         
     module.exports = function(callback) {
         var history     = 'Version history\n---------------\n',
+            ext         = '.tar.gz',
             link        = '//github.com/cloudcmd/archive/raw/master/cloudcmd',
             template    = '- *{{ date }}*, '    +
                           '**[v{{ version }}]'   +
-                          '(' + link + '-v{{ version }}.zip)**\n',
+                          '(' + link + '-v{{ version }}{{ extension }})**\n',
             version     = Info.version;
         
         cl(function(e, versionNew) {
             if (!error(e, callback))
                 replaceVersion('README.md', version, versionNew, function() {
                     var historyNew = history + rendy(template, {
-                        date    : shortdate(),
-                        version : versionNew
+                        date        : shortdate(),
+                        version     : versionNew,
+                        extension   : ext
                     });
                     
                     replaceVersion('README.md', history, historyNew, function(e) {
