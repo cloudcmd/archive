@@ -6,7 +6,7 @@
     
     module.exports = function(version, callback) {
         var dir     = './node_modules/',
-            name    = 'cloudcmd-' + version,
+            name    = 'cloudcmd-v' + version,
             from    = dir + 'cloudcmd',
             to      = dir + name;
         
