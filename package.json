@@ -1,12 +1,14 @@
 {
   "name": "archive",
-  "version": "2.2.1",
+  "version": "2.3.0",
   "private": true,
   "description": "articles",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "npm i cloudcmd && bin/release.js",
-    "commit": "git add --all && git commit -m 'chore(archive) update'"
+    "commit": "git add --all && git commit -m 'chore(archive) update'",
+    "push": "git push origin master",
+    "publish": "npm run release && npm run commit && npm run push"
   },
   "repository": {
     "type": "git",
