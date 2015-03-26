@@ -4,20 +4,20 @@
     var fs  = require('fs'),
         jag = require('jag');
     
-    module.exports = function(version) {
-        var dir     = '/node_modules/',
+    module.exports = function(version, callback) {
+        var dir     = './node_modules/',
             name    = 'cloudcmd-' + version,
             from    = dir + 'cloudcmd',
             to      = dir + name;
         
         fs.rename(from, to, function(e) {
-            if (!error(e))
-                jag.pack(to, './' + name, error);
+            if (!error(e, callback))
+                jag.pack(to, './' + name, callback);
         });
     };
     
-    function error(e) {
-        e && console.error(e.message);
+    function error(e, callback) {
+        e && callback(e);
         return e;
     }
     

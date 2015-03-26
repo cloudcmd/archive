@@ -18,10 +18,8 @@
                           '(' + link + '-v{{ version }}.zip)**\n',
             version     = Info.version;
         
-        cl(function(error, versionNew) {
-            if (error)
-                callback(error);
-            else
+        cl(function(e, versionNew) {
+            if (!error(e, callback))
                 replaceVersion('README.md', version, versionNew, function() {
                     var historyNew = history + rendy(template, {
                         date    : shortdate(),
@@ -29,14 +27,17 @@
                     });
                     
                     replaceVersion('README.md', history, historyNew, function(error) {
-                        if (error)
-                            callback(error);
-                        else
-                            pack(callback);
+                        if (!error(e, callback))
+                            pack(versionNew, callback);
                     });
                 });
         });
     };
+    
+    function error(e, callback) {
+        e && callback(e);
+        return e;
+    }
     
     function replaceVersion(name, version, versionNew, callback) {
         place(name, version, versionNew, function(error) {
