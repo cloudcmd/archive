@@ -8,7 +8,7 @@
     "release": "npm i cloudcmd && bin/release.js",
     "commit": "git add --all && git commit -m 'chore(archive) update'",
     "push": "git push origin master",
-    "publish": "npm run release && npm run commit && npm run push"
+    "publish": "npm run commit && npm run push"
   },
   "repository": {
     "type": "git",
