@@ -1,0 +1,29 @@
+{
+  "name": "archive",
+  "version": "2.2.0",
+  "private": true,
+  "description": "articles",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "release": "npm i cloudcmd && bin/release.js",
+    "commit": "git add --all && git commit -m 'chore(archive) update'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cloudcmd/archive.git"
+  },
+  "author": "coderaiser <mnemonic.enemy@gmail.com> (http://coderaiser.github.io/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cloudcmd/archive/issues"
+  },
+  "homepage": "https://github.com/coderaiser/archive",
+  "devDependencies": {
+    "jag": "~1.0.5",
+    "files-io": "~1.2.5",
+    "minor": "~1.2.3",
+    "place": "~1.1.2",
+    "rendy": "~1.0.6",
+    "shortdate": "~1.0.1"
+  }
+}
