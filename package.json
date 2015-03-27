@@ -5,7 +5,7 @@
   "description": "articles",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "release": "npm i cloudcmd && bin/release.js",
+    "release": "rm -rf node_modules && npm i cloudcmd && npm i && bin/release.js",
     "commit": "git add --all && git commit -m 'chore(archive) update'",
     "push": "git push origin master",
     "publish": "npm run commit && npm run push"
