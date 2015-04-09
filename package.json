@@ -1,6 +1,6 @@
 {
   "name": "archive",
-  "version": "2.4.2",
+  "version": "2.5.0",
   "private": true,
   "changelog": false,
   "release": false,
@@ -8,8 +8,7 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "release": "rm -rf node_modules && npm i cloudcmd && npm i && bin/release.js",
-    "add": "git add --all",
-    "wisdom": "npm run release && npm run add"
+    "wisdom": "npm run release --"
   },
   "repository": {
     "type": "git",

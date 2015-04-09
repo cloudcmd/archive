@@ -1,6 +1,6 @@
 Version history of [Cloud Commander](http://cloudcmd.io "Cloud Commander")
 ---------------
-- *2015.03.26*, **[v2.4.2](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.3.1.tar.gz)**
+- *2015.03.26*, **[v2.5.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.3.1.tar.gz)**
 - *2015.03.26*, **[v2.3.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.3.0.tar.gz)**
 - *2015.03.19*, **[v2.2.1](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.2.1.zip)**
 - *2015.03.13*, **[v2.2.0](//github.com/cloudcmd/archive/raw/master/cloudcmd-v2.2.0.zip)**
