@@ -21,11 +21,11 @@
   },
   "homepage": "https://github.com/coderaiser/archive",
   "devDependencies": {
-    "jag": "~1.0.5",
     "files-io": "~1.2.5",
+    "jag": "~1.0.5",
     "minor": "~1.2.3",
     "place": "~1.1.2",
-    "rendy": "~1.0.6",
+    "rendy": "~1.1.0",
     "shortdate": "~1.0.1"
   }
 }
