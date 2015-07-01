@@ -1,13 +1,13 @@
 {
   "name": "archive",
-  "version": "3.6.0",
+  "version": "3.5.0",
   "private": true,
   "changelog": false,
   "release": false,
   "description": "articles",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "release": "rm -rf node_modules && npm i cloudcmd && npm i && bin/release.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
     "wisdom": "npm run release --"
   },
   "repository": {
@@ -27,5 +27,8 @@
     "place": "~1.1.2",
     "rendy": "~1.1.0",
     "shortdate": "~1.0.1"
+  },
+  "dependencies": {
+    "async": "~1.3.0"
   }
 }

@@ -11,6 +11,7 @@
             name    = 'cloudcmd-v' + version,
             from    = dir + 'cloudcmd',
             to      = dir + name;
+        
         async.waterfall([
             function makeDir(callback) {
                 var dir     = 'node_modules',
@@ -51,9 +52,7 @@
                 jag.pack(to, './' + name, callback);
             }
             
-        ], function(error) {
-            callback(error);
-        });
+        ], callback);
     };
     
 })();
