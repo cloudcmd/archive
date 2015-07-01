@@ -3,7 +3,7 @@
 (function() {
     'use strict';
     
-    var DIR         = '../release/',
+    var DIR         = '../lib/',
         cl          = require(DIR + 'cl'),
         docs        = require(DIR + 'docs'),
         pack        = require(DIR + 'pack');
