@@ -8,8 +8,7 @@
   "scripts": {
     "release": "rm -rf node_modules && npm i && bin/release.js",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "wisdom": "npm run release --",
-    "nupdate": "nupdate"
+    "wisdom": "npm run release --"
   },
   "repository": {
     "type": "git",
@@ -22,7 +21,6 @@
   },
   "homepage": "https://github.com/coderaiser/archive",
   "devDependencies": {
-    "nupdate": "^2.0.0"
   },
   "dependencies": {
     "async": "^1.4.2",
