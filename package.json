@@ -6,10 +6,11 @@
   "release": false,
   "description": "articles",
   "scripts": {
-    "release": "rm -rf node_modules && npm i && bin/release.js && redrun upload",
+    "release": "rm -rf node_modules && npm i && bin/release.js",
     "upload": "putasset -u coderaiser -r cloudcmd -t v`version` -f cloudcmd-v`version`.tar.gz",
     "test": "echo \"Error: no test specified\" && exit 1",
-    "wisdom": "redrun release --"
+    "wisdom": "npm run release --",
+    "wisdom:done": "redrun upload"
   },
   "repository": {
     "type": "git",
