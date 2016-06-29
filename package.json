@@ -6,7 +6,8 @@
   "release": false,
   "description": "articles",
   "scripts": {
-    "release": "rm -rf node_modules && npm i && bin/release.js",
+    "release": "rm -rf node_modules && npm i && bin/release.js && upload",
+    "upload": "putasset -u coderaiser -r cloudcmd -t v`version` -f cloudcmd-v`version`.tar.gz",
     "test": "echo \"Error: no test specified\" && exit 1",
     "wisdom": "npm run release --"
   },
@@ -29,7 +30,9 @@
     "jaguar": "^1.1.0",
     "minor": "^1.2.3",
     "place": "^1.1.2",
+    "putasset": "^1.0.1",
     "rendy": "^1.1.0",
-    "shortdate": "^1.0.1"
+    "shortdate": "^1.0.1",
+    "version-io": "^1.2.5"
   }
 }
