@@ -21,8 +21,7 @@
     "url": "https://github.com/cloudcmd/archive/issues"
   },
   "homepage": "https://github.com/coderaiser/archive",
-  "devDependencies": {},
-  "dependencies": {
+  "devDependencies": {
     "async": "^2.0.0-rc.1",
     "cloudcmd": "*",
     "copymitter": "^1.8.4",
@@ -34,5 +33,6 @@
     "rendy": "^1.1.0",
     "shortdate": "^1.0.1",
     "version-io": "^1.2.5"
-  }
+  },
+  "dependencies": {},
 }
