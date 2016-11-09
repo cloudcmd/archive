@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/coderaiser/archive",
   "devDependencies": {
-    "async": "^2.0.0-rc.1",
+    "async": "^2.1.2",
     "cloudcmd": "*",
     "copymitter": "^1.8.4",
     "files-io": "^1.2.5",
