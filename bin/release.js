@@ -7,15 +7,10 @@ const cl = require(DIR + 'cl');
 const docs = require(DIR + 'docs');
 const pack = require(DIR + 'pack');
 
-cl((e, versionNew) => {
-    if (error(e))
-        return;
-    
-    docs(versionNew, (e, msg) => {
-        error(e) || console.log(msg);
-    });
-    
-    pack(versionNew, error);
+const version = process.env.WISDOM_VERSION;
+
+docs(versionNew, (e, msg) => {
+    error(e) || console.log(msg);
 });
 
 function error(e) {
