@@ -10,7 +10,9 @@
     "upload": "putasset -u coderaiser -r cloudcmd -t v`version` -f cloudcmd-v`version`.tar.gz",
     "test": "echo \"Error: no test specified\" && exit 1",
     "wisdom": "npm run release --",
-    "wisdom:done": "redrun upload"
+    "wisdom:done": "redrun upload",
+    "lint": "redrun lint:*",
+    "lint:eslint": "eslint --rule 'no-console:0' bin lib"
   },
   "repository": {
     "type": "git",
@@ -26,6 +28,7 @@
     "async": "^2.1.2",
     "cloudcmd": "*",
     "copymitter": "^1.8.4",
+    "eslint": "^3.14.1",
     "files-io": "^1.2.5",
     "jaguar": "^3.0.1",
     "minor": "^1.2.3",
