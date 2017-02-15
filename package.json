@@ -17,7 +17,7 @@
     "pack": "echo 'PACK...';jaguar -p cloudcmd-v$wisdom_version",
     "rm:archive": "rm master.tar.gz",
     "rm:folder": "rm -rf cloudcmd-v$wisdom_version",
-    "upload": "putasset -u coderaiser -r cloudcmd -t v$wisdom_version -f cloudcmd-v`version`.tar.gz",
+    "upload": "putasset -u coderaiser -r cloudcmd -t v$wisdom_version -f cloudcmd-v$wisdom_version.tar.gz",
     "build": "redrun download unpack install:* mv pack rm:*",
     "wisdom": "npm run build",
     "wisdom:done": "redrun upload",
