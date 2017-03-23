@@ -1,0 +1,37 @@
+{
+  "name": "smalltalk",
+  "homepage": "https://github.com/coderaiser/smalltalk",
+  "authors": [
+    "coderaiser <mnemonic.enemy@gmail.com>"
+  ],
+  "description": "Promise-based Alert, Confirm and Prompt replacement",
+  "main": "dist/smalltalk.min.js",
+  "moduleType": [
+    "globals",
+    "node"
+  ],
+  "keywords": [
+    "modal",
+    "alert",
+    "prompt",
+    "confirm"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "screen",
+    "example",
+    "test"
+  ],
+  "dependencies": {},
+  "version": "2.2.0",
+  "_release": "2.2.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "v2.2.0",
+    "commit": "150c70746faa991c18f8d34417da9172ba87e586"
+  },
+  "_source": "https://github.com/coderaiser/smalltalk.git",
+  "_target": "2.2.0",
+  "_originalSource": "smalltalk"
+}

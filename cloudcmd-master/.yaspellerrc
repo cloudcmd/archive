@@ -1,0 +1,53 @@
+{
+    "ignoreDigits": true,
+    "excludeFiles": [
+        ".git",
+        "modules",
+        "lib",
+        "node_modules"
+    ],
+    "fileExtensions": [
+        ".md"
+    ],
+    "dictionary":[
+        "Dev",
+        "Dropbox",
+        "Deepword",
+        "Dword",
+        "FilePicker",
+        "GDrive",
+        "Github",
+        "Heroku",
+        "Iptables",
+        "JitSu",
+        "Olena",
+        "TarZak",
+        "Termux",
+        "Zalitok",
+        "WebSocket",
+        "cd",
+        "cloudcmd",
+        "coderaiser",
+        "com",
+        "dev",
+        "deepword",
+        "dword",
+        "edward",
+        "favicon",
+        "github",
+        "io",
+        "js",
+        "minification",
+        "mouseup",
+        "nginx",
+        "or io",
+        "refactor",
+        "sslPort",
+        "unselect",
+        "util",
+        "v0",
+        "v1",
+        "v2",
+        "yml"
+    ]
+}
