@@ -33,7 +33,7 @@
     "eslint": "^4.0.0",
     "jaguar": "^3.0.1",
     "place": "^1.1.2",
-    "putasset": "^2.0.0",
+    "putasset": "^3.0.0",
     "redrun": "^5.0.0",
     "shortdate": "^1.0.1"
   },
